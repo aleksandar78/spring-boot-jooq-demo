@@ -21,7 +21,7 @@ See result:
 
 ##### ExecuteListenerProvider configuration
 
-Case 1 ( BEHAVOUR NON EXPECTED ):
+Case 1 ( BEHAVIOUR NON EXPECTED ):
 
 ```java
 	@Bean
@@ -39,7 +39,7 @@ This is result when
 }
 ```
 
-Case 2 ( BEHAVOUR EXPECTED ):
+Case 2 ( BEHAVIOUR EXPECTED ):
 
 ```java
 //	@Bean
