@@ -1,7 +1,7 @@
 buildscript {
 	ext {
-		springBootVersion = '2.0.5.RELEASE'
-        jooqVersion = '3.11.3'
+		springBootVersion = '2.1.0.RELEASE'
+        jooqVersion = '3.11.7'
 	}
 	repositories {
 		mavenCentral()
@@ -16,7 +16,7 @@ buildscript {
 	}
 }
 
-ext['jooq.version'] = '3.11.3'
+ext['jooq.version'] = '3.11.7'
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -26,7 +26,7 @@ apply plugin: "nu.studer.jooq"
 
 group = 'com.mycompany'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
+sourceCompatibility = "11"
 
 repositories {
 	mavenCentral()

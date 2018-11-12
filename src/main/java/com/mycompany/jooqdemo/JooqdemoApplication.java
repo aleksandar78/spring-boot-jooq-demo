@@ -18,9 +18,10 @@ public class JooqdemoApplication {
 		SpringApplication.run(JooqdemoApplication.class, args);
 	}
 	
-	// WHIT THIS CONFIGURATION ENABLED REST EXCEPTION HANDLER CATCH SPRING DATA ACCESS EXCEPTION ( BEHAVIOR NOT EXPECTED )
+	// WHIT THIS CONFIGURATION ENABLED REST EXCEPTION HANDLER CATCH SPRING DATA ACCESS EXCEPTION
+	// WORKS WITH SPRING BOOT 2.1 AND JOOQ 3.11.7
 	@Bean
-	@Order(Ordered.HIGHEST_PRECEDENCE)
+	@Order(Ordered.LOWEST_PRECEDENCE)
 	public ExecuteListenerProvider customeListenerProvider() {
 		return new DefaultExecuteListenerProvider(new ApplicationExceptionTranslator());
 	}
